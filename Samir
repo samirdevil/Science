@@ -1,0 +1,95 @@
+<DOCTYPE  html>
+<html lang ="ex">
+<head>
+<title>Detail</title>
+</head>
+<body>
+<form>
+<fieldset>
+<legend style="color:red">Personal information</legend>
+<p>Salutation</p>
+<select name="Salutation">
+<option value="None" selected>None</option>
+<option value="Mr.">Mr.</option>
+<option value="Mis.">Mis.</option>
+</select>
+<p></p>
+<p>First name:<input type="text" name="f name" required ></p>
+<p>Last name: <input type="text" name="l name" required ></p>
+<label>Gender:</label>
+<input type="radio"name="gender" value="male" required >Male
+<input type="radio"name="gendre" value="female">Female
+<p></p>
+<label>Email</label>
+<input type="Email" name="Email Address" required >
+<p></p>
+<label>Date of birth</label>
+<input type="Date" name="Date of birth" required >
+<p></p>
+<label>Address</label>
+<input type="text" name="Address" IP="Address" required >
+<p></p>
+<input type="button" name="Submit" value="Submit">
+<h1 style="color:red" align="centre">THANK YOU FOR FILLING</h1>
+<p></p>
+<div align="center">
+<canvas id="myCanvas" width="300" height="300" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+</div>
+<script>
+var c = document.getElementById("myCanvas")
+var ctx = c.getContext("2d")
+
+//filled circle main
+ctx.beginPath()
+ctx.fillStyle = "yellow"
+ctx.arc(150, 150, 100, 0, 2 * Math.PI)
+ctx.fill()
+
+//outlined circle main
+ctx.beginPath()
+ctx.strokeStyle = "black";
+ctx.arc(150, 150, 100, 0, 2 * Math.PI)
+ctx.stroke()
+
+//filled circle left-eye
+ctx.beginPath()
+ctx.fillStyle = "white"
+ctx.arc(110, 110, 15, 0, 2 * Math.PI)
+ctx.fill()
+
+//outlined circle left-eye
+ctx.beginPath()
+ctx.strokeStyle = "black"
+ctx.arc(110, 110, 15, 0, 2 * Math.PI)
+ctx.stroke()
+
+//filled circle right-eye
+ctx.beginPath()
+ctx.fillStyle = "white"
+ctx.arc(190, 110, 15, 0, 2 * Math.PI)
+ctx.fill()
+
+//outlined circle right-eye
+ctx.beginPath()
+ctx.strokeStyle = "black"
+ctx.arc(190, 110, 15, 0, 2 * Math.PI)
+ctx.stroke()
+
+//filled circle mouth
+ctx.beginPath()
+ctx.fillStyle = "white"
+ctx.arc(150, 175, 50, 0, Math.PI)
+ctx.fill()
+
+//outlined circle mouth
+ctx.beginPath()
+ctx.strokeStyle = "black"
+ctx.arc(150, 175, 50, 0, Math.PI)
+ctx.closePath()
+ctx.stroke()
+</script>
+</fieldset>
+</form>
+</body>
+</html>
